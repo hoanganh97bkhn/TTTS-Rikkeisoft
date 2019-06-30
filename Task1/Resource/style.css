@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+}
+
+/*style header*/
+div.menu-header ul li {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.menu-header ul li :hover{
+    cursor: pointer;
+}
+.menu-header button.btn-trial{
+    width: 100px;
+}
+.navbar-light .navbar-nav .active>.nav-link {
+    color: #007bff;
+}
+.dropdown-item:active{
+    color: #212529;
+    background-color: transparent;
+}
+
+/*style themes-menu*/
+a {
+    color: black;
+    text-decoration: none;
+}
+a.active{
+    color: #007bff;
+}
+
+div.themes-menu a img{
+    padding-right: 10px;
+}
+
+/*style jumbotron*/
+div div.jumbotron{
+    background-image: url('./image/background.jpg');
+    padding-top:30px;
+    padding-bottom: 30px;
+    margin-top: 10px
+}
+div div.jumbotron div.title{
+    line-height: 50px;
+}
+div div.jumbotron .title>div{
+    color: white;
+    font-size: 16px
+}
+div div.jumbotron div.input-group input{
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    height: 45px;
+}
+div div.jumbotron div.input-group button{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/*style menu-option*/
+div.themes div .box {
+    transition: all .4s linear;
+    position: relative;
+    padding: 10px;
+    border: 1px solid #e1e1e1;
+    border-radius: 3px;
+    background: #f7f7f7;
+    box-shadow: 0 0 3px #ccc;
+    margin-bottom: 10px;
+}
+div.themes .box .img_prodcution {
+    height: 360px;
+    overflow: hidden;
+}
+div.themes .img_prodcution img {
+    width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+div.themes div.row>div{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+div.themes div.row>div:hover{
+    cursor: pointer;
+
+}
+div.themes div.row div .view{
+    position: absolute;
+    top: 0;
+    left:0;
+    background: rgba(0, 0, 0, .35);
+    opacity: 0;
+    transition: .4s;
+    width: 100%;
+    height: 100%;
+}
+
+/*footer*/
+footer {
+    background-color: #3f3f3f;
+    color: #d5d5d5
+}
+footer p{
+    font-size: 12px
+}
+footer div.copyright {
+    margin-left: 0px;
+    margin-right: 0px;
+    border: 1px solid #1f1d1d;
+    background-color: #1f1d1d;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+footer h4{
+    color: white
+}
+footer .container {
+    padding-top: 50px;
+    padding-bottom: 50px
+}
+footer .back-to-top {
+    position: fixed;
+    bottom: 3%;
+    right: 40px;
+    z-index: 9999;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 30px;
+    background: #fff;
+    color: #393d3f;
+    border: 2px #393d3f solid;
+    border-radius: 99px;
+}
+footer div.description{
+    position: relative;
+}
+footer div.description div button.hotline{
+    position: absolute;
+    bottom: 10%;
+    right: 1%;
+    border-radius: 20px;
+}

@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Task1</title>
+
+    <!--khai bao bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">    
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <!-- khai bao link file css,js -->
+    <link rel="stylesheet " href="./style.css" >
+    <link rel="stylesheet " href="./style-responsive.css" >
+    <script src="index.js"></script>
+</head>
+<body>
+    
+    <!-- header -->
+<div class="container header">
+    <nav class="navbar navbar-expand-xl navbar-light mx-auto">
+        <a class="navbar-brand" href="#">
+          <img src="https://sorano.vn/cloud/timthumb.php?src=https://sorano.vn/cloud/cdn/logo_sorano_chuan.png&amp;h=65&amp;w=187&amp;zc=1&amp;q=50" title="sorano" alt="sorano">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse menu-header" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto ">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Trang Chủ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Giới Thiệu</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Dịch Vụ
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Service 1</a>
+                <a class="dropdown-item" href="#">Service 2</a>
+                <a class="dropdown-item" href="#">Service 3</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown themes-menu active">
+                <a class="nav-link dropdown-toggle d-none d-lg-block d-xl-block" href="#" id="navbarDropdown" data-target="#themes-menu" data-toggle="collapse" role="button" aria-haspopup="true" aria-expanded="false">
+                  Kho Giao Diện
+                </a>
+                <a class="nav-link dropdown-toggle d-lg-none d-xl-none" id="navbarDropdown " role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Kho Giao Diện
+                </a>
+                <div class="dropdown-menu d-lg-none" aria-labelledby="navbarDropdown">
+                  <a href="#" class="dropdown-item">Theme Bán Hàng</a>
+                  <a href="#" class="dropdown-item">Theme Doanh Nghiệp</a>  
+                  <a href="#" class="dropdown-item">Theme Miễn Phí</a>  
+                  <a href="#" class="dropdown-item">Tất cả theme</a>  
+                  <a href="#" class="dropdown-item">Theme Điện Thoại</a>    
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Nhận Diện Thương Hiệu
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Production 1</a>
+                  <a class="dropdown-item" href="#">Production 2</a>
+                  <a class="dropdown-item" href="#">Production 3</a>
+                </div>
+              </li>
+          </ul>
+          <button class="btn btn-primary btn-trial">Dùng thử</button>
+        </div>
+      </nav>
+</div>
+<div class="container-fluid"><hr/></div>
+
+    <!-- menu theme -->
+<div class="container collapse display-desktop" id="themes-menu">
+  <div class="row">
+    <div class="col">
+      <a href="#"><img src="./image/sell.png" alt="theme-moblie">Theme Bán Hàng</a>  
+    </div>
+    <div class="col">
+      <a href="#"><img src="./image/company.png" alt="theme-moblie">Theme Doanh Nghiệp</a>  
+    </div>
+    <div class="col">
+      <a href="#"><img src="./image/free.png" alt="theme-moblie">Theme Miễn Phí</a>  
+    </div>
+    <div class="col">
+      <a href="#"><img src="./image/all.png" alt="theme-moblie">Tất cả theme</a>  
+    </div>
+    <div class="col">
+      <a href="#"><img src="./image/smartphone.png" alt="theme-moblie">Theme Điện Thoại</a>  
+    </div>
+  </div>
+</div>
+
+    <!--jumbotron-->
+<div class="container-fluid">
+  <div class="jumbotron ">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-8 col-lg-8 col-md-8 col-12 title">
+          <div>Quý khách vui lòng để lại số điện thoại để được tư vấn miễn phí!</div>
+        </div>
+        <div class="col-xl-4 col-lg-4 col-md-4 col-12 phone" >
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="Nhập số điện thoại của bạn">
+            <div class="input-group-append">
+              <button class="btn btn-danger" type="submit">Gửi</button> 
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <!--themes option-->
+
+<div class="container themes-option ">
+    <nav class="navbar navbar-expand-sm navbar-light">
+        <h4 class="navbar-brand"><b>Kho Giao Diện</b></h4>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarThemes-option" aria-controls="navbarThemes-option" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarThemes-option">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">TẤT CẢ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">BÁN CHẠY NHẤT</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">ĐÁNH GIÁ TỐT NHẤT</a>
+              </li>
+          </ul>
+        </div>
+      </nav>
+</div>
+
+    <!--body-->
+<div class="themes container">
+  <div class="row">
+    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
+      <div class="box">
+          <div class="img_prodcution">
+              <img src="https://sorano.vn/cloud/timthumb.php?src=https://sorano.vn/cloud/cdn/product/42.png&amp;h=auto&amp;w=555&amp;zc=zc=1" title="Mẫu giao diện 42" alt="Mẫu giao diện 42">
+          </div>
+          <div class="view container btn-group-vertical" style="display: none">
+            <button class="btn btn-danger my-3 w-75 mx-auto">Xem DeMo</button>
+            <button class="btn btn-primary w-75 mx-auto">Xem Chi Tiet</button>
+          </div>
+      </div>
+      <div><b>Mẫu Giao Diện 1</b></div>
+    </div>
+    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
+        <div class="box">
+            <div class="img_prodcution">
+                <img src="https://sorano.vn/cloud/timthumb.php?src=https://sorano.vn/cloud/cdn/product/41.png&amp;h=auto&amp;w=555&amp;zc=zc=1" title="Mẫu giao diện 40" alt="Mẫu giao diện 40">            
+            </div>
+            <div class="view container btn-group-vertical" style="display: none">
+                <button class="btn btn-danger d-block my-3 w-75 mx-auto">Xem DeMo</button>
+                <button class="btn btn-primary d-block w-75 mx-auto">Xem Chi Tiet</button>
+            </div>
+        </div>
+        <div><b>Mẫu Giao Diện 1</b></div>
+    </div>
+    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6" >
+          <div class="box">
+              <div class="img_prodcution">
+                  <img src="https://sorano.vn/cloud/timthumb.php?src=https://sorano.vn/cloud/cdn/product/37.png&amp;h=auto&amp;w=555&amp;zc=zc=1" title="Mẫu giao diện 36" alt="Mẫu giao diện 36">             
+              </div>
+              <div class="view container btn-group-vertical" style="display: none">
+                  <button class="btn btn-danger d-block my-3 w-75 mx-auto">Xem DeMo</button>
+                  <button class="btn btn-primary d-block w-75 mx-auto">Xem Chi Tiet</button>
+              </div>
+          </div>
+          <div><b>Mẫu Giao Diện 1</b></div>
+    </div>
+    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6" >
+      <div class="box">
+          <div class="img_prodcution">
+              <img src="https://sorano.vn/cloud/timthumb.php?src=https://sorano.vn/cloud/cdn/product/27.png&amp;h=auto&amp;w=555&amp;zc=zc=1" title="Mẫu giao diện 26" alt="Mẫu giao diện 26">          
+          </div>
+          <div class="view container btn-group-vertical" style="display: none">
+              <button class="btn btn-danger d-block my-3 w-75 mx-auto">Xem DeMo</button>
+              <button class="btn btn-primary d-block w-75 mx-auto">Xem Chi Tiet</button>
+          </div>
+      </div>
+      <div><b>Mẫu Giao Diện 1</b></div>
+    </div>
+    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6" >
+        <div class="box">
+            <div class="img_prodcution">
+                <img src="https://sorano.vn/cloud/timthumb.php?src=https://sorano.vn/cloud/cdn/product/21.png&amp;h=auto&amp;w=555&amp;zc=zc=1" title="Mẫu giao diện 21" alt="Mẫu giao diện 21">            
+            </div>
+            <div class="view container btn-group-vertical" style="display: none">
+                <button class="btn btn-danger d-block my-3 w-75 mx-auto">Xem DeMo</button>
+                <button class="btn btn-primary d-block w-75 mx-auto">Xem Chi Tiet</button>
+            </div>
+        </div>
+        <div><b>Mẫu Giao Diện 1</b></div>
+    </div>
+    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
+        <div class="box">
+            <div class="img_prodcution">
+                <img src="https://sorano.vn/cloud/timthumb.php?src=https://sorano.vn/cloud/cdn/product/20.png&amp;h=auto&amp;w=555&amp;zc=zc=1" title="Mẫu giao diện 20" alt="Mẫu giao diện 20">            
+            </div>
+            <div class="view container btn-group-vertical" style="display: none">
+                <button class="btn btn-danger d-block my-3 w-75 mx-auto">Xem DeMo</button>
+                <button class="btn btn-primary d-block w-75 mx-auto">Xem Chi Tiet</button>
+            </div>
+        </div>
+        <div><b>Mẫu Giao Diện 1</b></div>
+    </div>
+    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
+        <div class="box">
+            <div class="img_prodcution">
+                <img src="https://sorano.vn/cloud/timthumb.php?src=https://sorano.vn/cloud/cdn/product/18.png&amp;h=auto&amp;w=555&amp;zc=zc=1" title="Mẫu giao diện 18" alt="Mẫu giao diện 18">            
+            </div>
+            <div class="view container btn-group-vertical" style="display: none">
+                <button class="btn btn-danger d-block my-3 w-75 mx-auto">Xem DeMo</button>
+                <button class="btn btn-primary d-block w-75 mx-auto">Xem Chi Tiet</button>
+            </div>
+        </div>
+        <div><b>Mẫu Giao Diện 1</b></div>
+    </div>
+    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
+        <div class="box">
+            <div class="img_prodcution">
+                <img src="https://sorano.vn/cloud/timthumb.php?src=https://sorano.vn/cloud/cdn/product/1.png&amp;h=auto&amp;w=555&amp;zc=zc=1" title="Mẫu giao diện 1" alt="Mẫu giao diện 1">            
+            </div>
+            <div class="view container btn-group-vertical" style="display: none">
+                <button class="btn btn-danger d-block my-3 w-75 mx-auto">Xem DeMo</button>
+                <button class="btn btn-primary d-block w-75 mx-auto">Xem Chi Tiet</button>
+            </div>
+        </div>
+        <div><b>Mẫu Giao Diện 1</b></div>
+    </div>
+    </div>
+  </div>
+  <div class="row justify-content-center my-5">
+    <button class="btn btn-primary px-4 py-2">Xem Tất Cả Các Màu</button>
+</div>
+</div>
+
+    <!--footer-->
+<div class="container-fluid">
+  <footer>
+    <div class="container">
+    <div class="row description">
+      <div class="col-md-3 col-sm-6">
+        <h4 class="my-3">Thông tin liên hệ</h4>
+        <p>Địa chỉ : Tầng 4, tòa nhà BigTower, <br> 23 Mỹ Đình, Cầu Giấy, Hầ Nội</p>
+        <p>Email : info@sorano.com</p>
+        <p>Hotline : 0961.543.666 - 0914.528.021</p>
+        <div class="mt-4">
+          <i class="fab fa-facebook-f "></i>
+          <i class="fab fa-twitter mx-2"></i>
+          <i class="fab fa-google-plus-g"></i>
+          <i class="fab fa-instagram ml-2"></i>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <h4 class="my-3">Dịch Vụ Giải Pháp</h4>
+        <p>Thiết kế Website Theo Yêu Cầu</p>
+        <p>Thiết Kế Website Thương Mại ĐT</p>
+        <p>Chăm Sóc Website và Fanapage</p>
+        <p>Thiết kế logo, voucher</p>
+        <p>Thiết kế Brochure, catalogue</p>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <h4 class="my-3">Hỗ Trợ</h4>
+        <p>Hỏi đáp Email</p>
+        <p>Hỏi đáp tên miền</p>
+        <p>Hướng dẫn sử dụng Hosting</p>
+        <p>Profile Công ty</p>
+        <p>Chính Sách Bảo Mật</p>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <button class="hotline btn btn-primary">
+            <div><i class="mr-3 fas fa-phone-volume"></i> Hotline : 0961.543.666</div>
+        </button>
+      </div>
+    </div>      
+    </div>
+    <div class="copyright row text-center">
+        <div class="col-12"> 
+          <span>&copy; Copyright 2018. Sorano JSC - All rights reseverd: Designed by Sorano.vn</span>
+        </div>
+    </div>
+    <a href="#top" class="back-to-top" title="Back to top" style="display: block;"><i class="fa fa-2x fa-angle-up "></i></a>
+    
+  </footer>
+</div>
+
+</body>
+</html>
